@@ -1,0 +1,93 @@
+
+<!-- saved from url=(0036)http://localhost:9100/jobtracker.jsp -->
+<html class=" clickberry-extension clickberry-extension-standalone"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ip-172-31-46-125 Hadoop Map/Reduce Administration</title>
+<link rel="stylesheet" type="text/css" href="./jobtracker.jsp_files/hadoop.css">
+<script type="text/javascript" src="./jobtracker.jsp_files/jobtracker.js"></script>
+<script type="text/javascript" src="./jobtracker.jsp_files/sorttable.js"></script>
+<meta content="clickberry-extension-here"><script id="clickberry-standalone-script" src="chrome-extension://lfmhcpmkbdkbgbmkjoiopeeegenkdikp/modules/clickberry/ChromeStdInjector.js?v=prod&addonType=fvd"></script></head>
+<body>
+
+
+
+<h1>ip-172-31-46-125 Hadoop Map/Reduce Administration</h1>
+
+<div id="quicklinks">
+  <a href="http://localhost:9100/jobtracker.jsp#quicklinks" onclick="toggle(&#39;quicklinks-list&#39;); return false;">Quick Links</a>
+  <ul id="quicklinks-list">
+    <li><a href="http://localhost:9100/jobtracker.jsp#scheduling_info">Scheduling Info</a></li>
+    <li><a href="http://localhost:9100/jobtracker.jsp#running_jobs">Running Jobs</a></li>
+    <li><a href="http://localhost:9100/jobtracker.jsp#retired_jobs">Retired Jobs</a></li>
+    <li><a href="http://localhost:9100/jobtracker.jsp#local_logs">Local Logs</a></li>
+  </ul>
+</div>
+
+<b>State:</b> RUNNING<br>
+<b>Started:</b> Sat Dec 07 23:31:55 UTC 2013<br>
+<b>Version:</b> 1.0.3,
+                r<br>
+<b>Compiled:</b> Wed Oct  2 12:17:08 PDT 2013 by 
+                 Elastic MapReduce<br>
+<b>Identifier:</b> 201312072331<br>                 
+                   
+<hr>
+<h2>Cluster Summary (Heap Size is 1.92 GB/2 GB)</h2>
+<table border="1" cellpadding="5" cellspacing="0">
+<tbody><tr><th>Running Map Tasks</th><th>Running Reduce Tasks</th><th>Total Submissions</th><th>Nodes</th><th>Occupied Map Slots</th><th>Occupied Reduce Slots</th><th>Reserved Map Slots</th><th>Reserved Reduce Slots</th><th>Map Task Capacity</th><th>Reduce Task Capacity</th><th>Avg. Tasks/Node</th><th>Blacklisted Nodes</th><th>Graylisted Nodes</th><th>Excluded Nodes</th></tr>
+<tr><td>2587</td><td>272</td><td>1</td><td><a href="http://localhost:9100/machines.jsp?type=active">275</a></td><td>2587</td><td>272</td><td>0</td><td>0</td><td>3300</td><td>550</td><td>14.00</td><td><a href="http://localhost:9100/machines.jsp?type=blacklisted">0</a></td><td><a href="http://localhost:9100/machines.jsp?type=graylisted">0</a></td><td><a href="http://localhost:9100/machines.jsp?type=excluded">0</a></td></tr></tbody></table>
+<br>
+<hr>
+<h2 id="scheduling_info">Scheduling Information</h2>
+<table border="2" cellpadding="5" cellspacing="2" class="sortable">
+<thead style="font-weight: bold">
+<tr>
+<td> Queue Name </td>
+<td> State </td>
+<td> Scheduling Information</td>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><a href="http://localhost:9100/jobqueue_details.jsp?queueName=default">default</a></td>
+<td>running</td>
+<td>N/A
+</td>
+</tr>
+
+</tbody>
+<tfoot></tfoot></table>
+<hr>
+<b>Filter (Jobid, Priority, User, Name)</b> <input type="text" id="filter" onkeyup="applyfilter()"> <br>
+<span class="small">Example: 'user:smith 3200' will filter by 'smith' only in the user field and '3200' in all fields</span>
+<hr>
+
+<h2 id="running_jobs">Running Jobs</h2>
+<table border="1" cellpadding="5" cellspacing="0" class="sortable"><thead><tr><td><b>Jobid</b></td><td><b>Started</b></td><td><b>Priority</b></td><td><b>User</b></td><td><b>Name</b></td><td><b>Map % Complete</b></td><td><b>Map Total</b></td><td><b>Maps Completed</b></td><td><b>Reduce % Complete</b></td><td><b>Reduce Total</b></td><td><b>Reduces Completed</b></td><td><b>Job Scheduling Information</b></td><td><b>Diagnostic Info </b></td></tr></thead>
+<tbody>
+<tr><td id="job_0"><a href="http://localhost:9100/jobdetails.jsp?jobid=job_201312072331_0001&refresh=30">job_201312072331_0001</a></td><td id="started_0">Sat Dec 07 23:54:38 UTC 2013</td><td id="priority_0">NORMAL</td><td id="user_0">hadoop</td><td id="name_0">commoncrawl-examples-1.0.1-HM-2013-12-6-4.jar</td><td>9.58%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_filled" width="9%"></td><td cellspacing="0" class="perc_nonfilled" width="91%"></td></tr></tbody></table></td><td>365419</td><td>33765</td><td>2.74%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_filled" width="2%"></td><td cellspacing="0" class="perc_nonfilled" width="98%"></td></tr></tbody></table></td><td>275</td><td> 0</td><td>NA</td><td>NA</td></tr>
+</tbody><tfoot></tfoot></table>
+
+<hr>
+
+
+
+
+
+<h2 id="retired_jobs">Retired Jobs</h2>
+<table border="1" cellpadding="5" cellspacing="0">
+<tbody><tr><td align="center" colspan="8"><i>none</i></td></tr>
+</tbody></table>
+
+<hr>
+
+<h2 id="local_logs">Local Logs</h2>
+<a href="http://localhost:9100/logs/">Log</a> directory,
+<a href="http://localhost:9100/jobhistoryhome.jsp">
+Job Tracker History</a>
+
+<hr>
+This is <a href="http://hadoop.apache.org/">Apache Hadoop</a> release 1.0.3
+
+
+<autoscroll_cursor hidden="" class="vertical"></autoscroll_cursor><iframe id="rdbIndicator" width="100%" height="270" border="0" src="./jobtracker.jsp_files/indicator.html" style="display: none; border: 0; position: fixed; left: 0; top: 0; z-index: 2147483647"></iframe></body></html>

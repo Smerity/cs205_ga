@@ -1,0 +1,1608 @@
+
+<!-- saved from url=(0084)http://localhost:9100/jobtasks.jsp?jobid=job_201312080524_0001&type=reduce&pagenum=1 -->
+<html class=" clickberry-extension clickberry-extension-standalone"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Hadoop reduce task list for job_201312080524_0001 on ip-10-17-185-178</title>
+    <link rel="stylesheet" type="text/css" href="./Hadoop reduce task list for job_201312080524_0001 on ip-10-17-185-178_files/hadoop.css">
+  <meta content="clickberry-extension-here"><script id="clickberry-standalone-script" src="chrome-extension://lfmhcpmkbdkbgbmkjoiopeeegenkdikp/modules/clickberry/ChromeStdInjector.js?v=prod&addonType=fvd"></script></head>
+<body>
+<h1>Hadoop reduce task list for 
+<a href="http://localhost:9100/jobdetails.jsp?jobid=job_201312080524_0001">job_201312080524_0001</a> on 
+<a href="http://localhost:9100/jobtracker.jsp">ip-10-17-185-178</a></h1>
+<hr><h2>All Tasks</h2><center><table border="2" cellpadding="5" cellspacing="2"><tbody><tr><td align="center">Task</td><td>Complete</td><td>Status</td><td>Start Time</td><td>Finish Time</td><td>Errors</td><td>Counters</td></tr><tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000000">task_201312080524_0001_r_000000</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOfRange(Arrays.java:2694)
+	at java.lang.String.&lt;init&gt;(String.java:203)
+	at java.lang.StringBuilder.toString(StringBuilder.java:405)
+	at org.apache.hadoop.mapreduce.TaskAttemptID.toString(TaskAttemptID.java:141)
+	at java.lang.String.valueOf(String.java:2854)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.getMapCompletionEvents(ReduceTask.java:2940)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.run(ReduceTask.java:2865)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000000">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000001">task_201312080524_0001_r_000001</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000001">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000002">task_201312080524_0001_r_000002</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000002">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000003">task_201312080524_0001_r_000003</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000003">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000004">task_201312080524_0001_r_000004</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000004">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000005">task_201312080524_0001_r_000005</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOfRange(Arrays.java:2694)
+	at java.lang.String.&lt;init&gt;(String.java:203)
+	at java.lang.String.substring(String.java:1913)
+	at java.net.URLStreamHandler.parseURL(URLStreamHandler.java:171)
+	at java.net.URL.&lt;init&gt;(URL.java:614)
+	at java.net.URL.&lt;init&gt;(URL.java:482)
+	at java.net.URL.&lt;init&gt;(URL.java:431)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.getMapCompletionEvents(ReduceTask.java:2940)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.run(ReduceTask.java:2865)
+
+Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOfRange(Arrays.java:2694)
+	at java.lang.String.&lt;init&gt;(String.java:203)
+	at java.lang.StringBuilder.toString(StringBuilder.java:405)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.getMapCompletionEvents(ReduceTask.java:2940)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.run(ReduceTask.java:2865)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000005">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000006">task_201312080524_0001_r_000006</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.nio.HeapByteBuffer.&lt;init&gt;(HeapByteBuffer.java:57)
+	at java.nio.ByteBuffer.allocate(ByteBuffer.java:331)
+	at sun.nio.cs.StreamEncoder.&lt;init&gt;(StreamEncoder.java:195)
+	at sun.nio.cs.StreamEncoder.&lt;init&gt;(StreamEncoder.java:175)
+	at sun.nio.cs.StreamEncoder.forOutputStreamWriter(StreamEncoder.java:68)
+	at java.io.OutputStreamWriter.&lt;init&gt;(OutputStreamWriter.java:133)
+	at java.io.PrintStream.&lt;init&gt;(PrintStream.java:111)
+	at java.io.PrintStream.&lt;init&gt;(PrintStream.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:438)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.&lt;init&gt;(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:996)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:850)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getInputStream(ReduceTask.java:1644)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1601)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1501)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000006">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000007">task_201312080524_0001_r_000007</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000007">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000008">task_201312080524_0001_r_000008</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000008">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000009">task_201312080524_0001_r_000009</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000009">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000010">task_201312080524_0001_r_000010</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000010">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000011">task_201312080524_0001_r_000011</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000011">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000012">task_201312080524_0001_r_000012</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000012">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000013">task_201312080524_0001_r_000013</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000013">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000014">task_201312080524_0001_r_000014</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000014">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000015">task_201312080524_0001_r_000015</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000015">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000016">task_201312080524_0001_r_000016</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000016">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000017">task_201312080524_0001_r_000017</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000017">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000018">task_201312080524_0001_r_000018</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000018">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000019">task_201312080524_0001_r_000019</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000019">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000020">task_201312080524_0001_r_000020</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000020">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000021">task_201312080524_0001_r_000021</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000021">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000022">task_201312080524_0001_r_000022</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000022">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000023">task_201312080524_0001_r_000023</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOf(Arrays.java:2367)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:415)
+	at java.lang.StringBuilder.append(StringBuilder.java:132)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.getMapCompletionEvents(ReduceTask.java:2940)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.run(ReduceTask.java:2865)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000023">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000024">task_201312080524_0001_r_000024</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000024">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000025">task_201312080524_0001_r_000025</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.hadoop.fs.Path.initialize(Path.java:145)
+	at org.apache.hadoop.fs.Path.&lt;init&gt;(Path.java:126)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1409)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1711)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000025">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000026">task_201312080524_0001_r_000026</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000026">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000027">task_201312080524_0001_r_000027</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000027">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000028">task_201312080524_0001_r_000028</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000028">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000029">task_201312080524_0001_r_000029</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000029">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000030">task_201312080524_0001_r_000030</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1711)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000030">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000031">task_201312080524_0001_r_000031</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000031">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000032">task_201312080524_0001_r_000032</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000032">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000033">task_201312080524_0001_r_000033</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000033">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000034">task_201312080524_0001_r_000034</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000034">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000035">task_201312080524_0001_r_000035</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000035">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000036">task_201312080524_0001_r_000036</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000036">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000037">task_201312080524_0001_r_000037</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000037">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000038">task_201312080524_0001_r_000038</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000038">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000039">task_201312080524_0001_r_000039</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000039">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000040">task_201312080524_0001_r_000040</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000040">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000041">task_201312080524_0001_r_000041</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000041">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000042">task_201312080524_0001_r_000042</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000042">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000043">task_201312080524_0001_r_000043</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000043">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000044">task_201312080524_0001_r_000044</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000044">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000045">task_201312080524_0001_r_000045</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000045">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000046">task_201312080524_0001_r_000046</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000046">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000047">task_201312080524_0001_r_000047</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:42<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000047">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000048">task_201312080524_0001_r_000048</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:43<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000048">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000049">task_201312080524_0001_r_000049</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:43<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.io.BufferedWriter.&lt;init&gt;(BufferedWriter.java:105)
+	at java.io.BufferedWriter.&lt;init&gt;(BufferedWriter.java:88)
+	at java.io.PrintStream.&lt;init&gt;(PrintStream.java:112)
+	at java.io.PrintStream.&lt;init&gt;(PrintStream.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:438)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.&lt;init&gt;(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:996)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:850)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getInputStream(ReduceTask.java:1644)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1601)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1501)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOfRange(Arrays.java:2694)
+	at java.lang.String.&lt;init&gt;(String.java:203)
+	at java.lang.String.substring(String.java:1913)
+	at java.net.URLStreamHandler.parseURL(URLStreamHandler.java:150)
+	at java.net.URL.&lt;init&gt;(URL.java:614)
+	at java.net.URL.&lt;init&gt;(URL.java:482)
+	at java.net.URL.&lt;init&gt;(URL.java:431)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.getMapCompletionEvents(ReduceTask.java:2940)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.run(ReduceTask.java:2865)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000049">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000050">task_201312080524_0001_r_000050</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:43<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 29sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000050">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000051">task_201312080524_0001_r_000051</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000051">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000052">task_201312080524_0001_r_000052</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000052">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000053">task_201312080524_0001_r_000053</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000053">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000054">task_201312080524_0001_r_000054</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000054">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000055">task_201312080524_0001_r_000055</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000055">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000056">task_201312080524_0001_r_000056</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000056">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000057">task_201312080524_0001_r_000057</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000057">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000058">task_201312080524_0001_r_000058</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000058">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000059">task_201312080524_0001_r_000059</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000059">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000060">task_201312080524_0001_r_000060</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000060">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000061">task_201312080524_0001_r_000061</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000061">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000062">task_201312080524_0001_r_000062</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000062">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000063">task_201312080524_0001_r_000063</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000063">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000064">task_201312080524_0001_r_000064</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000064">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000065">task_201312080524_0001_r_000065</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000065">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000066">task_201312080524_0001_r_000066</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000066">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000067">task_201312080524_0001_r_000067</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000067">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000068">task_201312080524_0001_r_000068</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000068">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000069">task_201312080524_0001_r_000069</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000069">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000070">task_201312080524_0001_r_000070</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000070">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000071">task_201312080524_0001_r_000071</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000071">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000072">task_201312080524_0001_r_000072</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000072">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000073">task_201312080524_0001_r_000073</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000073">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000074">task_201312080524_0001_r_000074</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 28sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOf(Arrays.java:2367)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:415)
+	at java.lang.StringBuilder.append(StringBuilder.java:132)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.getMapCompletionEvents(ReduceTask.java:2940)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.run(ReduceTask.java:2865)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000074">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000075">task_201312080524_0001_r_000075</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000075">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000076">task_201312080524_0001_r_000076</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000076">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000077">task_201312080524_0001_r_000077</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000077">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000078">task_201312080524_0001_r_000078</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000078">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000079">task_201312080524_0001_r_000079</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000079">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000080">task_201312080524_0001_r_000080</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000080">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000081">task_201312080524_0001_r_000081</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000081">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000082">task_201312080524_0001_r_000082</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000082">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000083">task_201312080524_0001_r_000083</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000083">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000084">task_201312080524_0001_r_000084</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000084">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000085">task_201312080524_0001_r_000085</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000085">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000086">task_201312080524_0001_r_000086</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000086">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000087">task_201312080524_0001_r_000087</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000087">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000088">task_201312080524_0001_r_000088</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000088">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000089">task_201312080524_0001_r_000089</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000089">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000090">task_201312080524_0001_r_000090</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000090">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000091">task_201312080524_0001_r_000091</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000091">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000092">task_201312080524_0001_r_000092</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000092">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000093">task_201312080524_0001_r_000093</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000093">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000094">task_201312080524_0001_r_000094</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000094">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000095">task_201312080524_0001_r_000095</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000095">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000096">task_201312080524_0001_r_000096</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000096">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000097">task_201312080524_0001_r_000097</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000097">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000098">task_201312080524_0001_r_000098</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000098">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000099">task_201312080524_0001_r_000099</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000099">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000100">task_201312080524_0001_r_000100</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000100">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000101">task_201312080524_0001_r_000101</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000101">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000102">task_201312080524_0001_r_000102</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000102">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000103">task_201312080524_0001_r_000103</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000103">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000104">task_201312080524_0001_r_000104</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000104">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000105">task_201312080524_0001_r_000105</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000105">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000106">task_201312080524_0001_r_000106</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.net.Socket.getOutputStream(Socket.java:920)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:434)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.&lt;init&gt;(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:996)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:850)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getInputStream(ReduceTask.java:1644)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1601)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1501)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000106">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000107">task_201312080524_0001_r_000107</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000107">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000108">task_201312080524_0001_r_000108</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000108">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000109">task_201312080524_0001_r_000109</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000109">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000110">task_201312080524_0001_r_000110</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000110">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000111">task_201312080524_0001_r_000111</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000111">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000112">task_201312080524_0001_r_000112</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000112">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000113">task_201312080524_0001_r_000113</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000113">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000114">task_201312080524_0001_r_000114</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:44<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000114">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000115">task_201312080524_0001_r_000115</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000115">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000116">task_201312080524_0001_r_000116</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000116">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000117">task_201312080524_0001_r_000117</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000117">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000118">task_201312080524_0001_r_000118</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000118">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000119">task_201312080524_0001_r_000119</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000119">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000120">task_201312080524_0001_r_000120</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000120">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000121">task_201312080524_0001_r_000121</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000121">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000122">task_201312080524_0001_r_000122</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000122">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000123">task_201312080524_0001_r_000123</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000123">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000124">task_201312080524_0001_r_000124</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000124">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000125">task_201312080524_0001_r_000125</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000125">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000126">task_201312080524_0001_r_000126</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000126">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000127">task_201312080524_0001_r_000127</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000127">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000128">task_201312080524_0001_r_000128</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000128">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000129">task_201312080524_0001_r_000129</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000129">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000130">task_201312080524_0001_r_000130</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000130">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000131">task_201312080524_0001_r_000131</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000131">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000132">task_201312080524_0001_r_000132</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000132">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000133">task_201312080524_0001_r_000133</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000133">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000134">task_201312080524_0001_r_000134</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000134">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000135">task_201312080524_0001_r_000135</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000135">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000136">task_201312080524_0001_r_000136</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000136">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000137">task_201312080524_0001_r_000137</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000137">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000138">task_201312080524_0001_r_000138</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000138">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000139">task_201312080524_0001_r_000139</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000139">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000140">task_201312080524_0001_r_000140</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000140">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000141">task_201312080524_0001_r_000141</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000141">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000142">task_201312080524_0001_r_000142</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000142">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000143">task_201312080524_0001_r_000143</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000143">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000144">task_201312080524_0001_r_000144</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 27sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000144">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000145">task_201312080524_0001_r_000145</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000145">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000146">task_201312080524_0001_r_000146</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000146">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000147">task_201312080524_0001_r_000147</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000147">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000148">task_201312080524_0001_r_000148</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000148">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000149">task_201312080524_0001_r_000149</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000149">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000150">task_201312080524_0001_r_000150</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000150">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000151">task_201312080524_0001_r_000151</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000151">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000152">task_201312080524_0001_r_000152</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000152">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000153">task_201312080524_0001_r_000153</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000153">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000154">task_201312080524_0001_r_000154</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000154">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000155">task_201312080524_0001_r_000155</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000155">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000156">task_201312080524_0001_r_000156</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000156">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000157">task_201312080524_0001_r_000157</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000157">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000158">task_201312080524_0001_r_000158</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000158">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000159">task_201312080524_0001_r_000159</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000159">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000160">task_201312080524_0001_r_000160</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000160">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000161">task_201312080524_0001_r_000161</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000161">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000162">task_201312080524_0001_r_000162</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000162">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000163">task_201312080524_0001_r_000163</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000163">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000164">task_201312080524_0001_r_000164</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000164">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000165">task_201312080524_0001_r_000165</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000165">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000166">task_201312080524_0001_r_000166</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000166">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000167">task_201312080524_0001_r_000167</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000167">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000168">task_201312080524_0001_r_000168</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000168">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000169">task_201312080524_0001_r_000169</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000169">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000170">task_201312080524_0001_r_000170</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000170">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000171">task_201312080524_0001_r_000171</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000171">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000172">task_201312080524_0001_r_000172</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000172">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000173">task_201312080524_0001_r_000173</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000173">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000174">task_201312080524_0001_r_000174</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000174">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000175">task_201312080524_0001_r_000175</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000175">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000176">task_201312080524_0001_r_000176</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000176">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000177">task_201312080524_0001_r_000177</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOfRange(Arrays.java:2694)
+	at java.lang.String.&lt;init&gt;(String.java:203)
+	at java.lang.StringBuilder.toString(StringBuilder.java:405)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.getMapCompletionEvents(ReduceTask.java:2940)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.run(ReduceTask.java:2865)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000177">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000178">task_201312080524_0001_r_000178</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000178">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000179">task_201312080524_0001_r_000179</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000179">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000180">task_201312080524_0001_r_000180</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000180">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000181">task_201312080524_0001_r_000181</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000181">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000182">task_201312080524_0001_r_000182</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000182">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000183">task_201312080524_0001_r_000183</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000183">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000184">task_201312080524_0001_r_000184</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000184">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000185">task_201312080524_0001_r_000185</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000185">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000186">task_201312080524_0001_r_000186</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000186">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000187">task_201312080524_0001_r_000187</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000187">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000188">task_201312080524_0001_r_000188</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000188">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000189">task_201312080524_0001_r_000189</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000189">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000190">task_201312080524_0001_r_000190</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000190">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000191">task_201312080524_0001_r_000191</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000191">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000192">task_201312080524_0001_r_000192</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000192">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000193">task_201312080524_0001_r_000193</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000193">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000194">task_201312080524_0001_r_000194</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000194">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000195">task_201312080524_0001_r_000195</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000195">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000196">task_201312080524_0001_r_000196</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000196">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000197">task_201312080524_0001_r_000197</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000197">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000198">task_201312080524_0001_r_000198</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000198">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000199">task_201312080524_0001_r_000199</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000199">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000200">task_201312080524_0001_r_000200</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000200">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000201">task_201312080524_0001_r_000201</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000201">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000202">task_201312080524_0001_r_000202</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000202">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000203">task_201312080524_0001_r_000203</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000203">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000204">task_201312080524_0001_r_000204</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000204">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000205">task_201312080524_0001_r_000205</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000205">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000206">task_201312080524_0001_r_000206</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000206">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000207">task_201312080524_0001_r_000207</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000207">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000208">task_201312080524_0001_r_000208</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000208">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000209">task_201312080524_0001_r_000209</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000209">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000210">task_201312080524_0001_r_000210</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000210">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000211">task_201312080524_0001_r_000211</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000211">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000212">task_201312080524_0001_r_000212</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000212">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000213">task_201312080524_0001_r_000213</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000213">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000214">task_201312080524_0001_r_000214</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000214">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000215">task_201312080524_0001_r_000215</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000215">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000216">task_201312080524_0001_r_000216</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000216">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000217">task_201312080524_0001_r_000217</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000217">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000218">task_201312080524_0001_r_000218</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000218">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000219">task_201312080524_0001_r_000219</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000219">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000220">task_201312080524_0001_r_000220</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000220">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000221">task_201312080524_0001_r_000221</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000221">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000222">task_201312080524_0001_r_000222</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000222">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000223">task_201312080524_0001_r_000223</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000223">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000224">task_201312080524_0001_r_000224</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000224">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000225">task_201312080524_0001_r_000225</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000225">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000226">task_201312080524_0001_r_000226</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000226">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000227">task_201312080524_0001_r_000227</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000227">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000228">task_201312080524_0001_r_000228</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000228">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000229">task_201312080524_0001_r_000229</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000229">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000230">task_201312080524_0001_r_000230</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000230">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000231">task_201312080524_0001_r_000231</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000231">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000232">task_201312080524_0001_r_000232</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000232">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000233">task_201312080524_0001_r_000233</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000233">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000234">task_201312080524_0001_r_000234</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000234">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000235">task_201312080524_0001_r_000235</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000235">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000236">task_201312080524_0001_r_000236</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000236">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000237">task_201312080524_0001_r_000237</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000237">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000238">task_201312080524_0001_r_000238</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000238">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000239">task_201312080524_0001_r_000239</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000239">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000240">task_201312080524_0001_r_000240</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000240">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000241">task_201312080524_0001_r_000241</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000241">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000242">task_201312080524_0001_r_000242</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000242">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000243">task_201312080524_0001_r_000243</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000243">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000244">task_201312080524_0001_r_000244</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000244">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000245">task_201312080524_0001_r_000245</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000245">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000246">task_201312080524_0001_r_000246</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000246">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000247">task_201312080524_0001_r_000247</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.net.URL.set(URL.java:707)
+	at java.net.URLStreamHandler.setURL(URLStreamHandler.java:538)
+	at java.net.URLStreamHandler.parseURL(URLStreamHandler.java:305)
+	at java.net.URL.&lt;init&gt;(URL.java:614)
+	at java.net.URL.&lt;init&gt;(URL.java:482)
+	at java.net.URL.&lt;init&gt;(URL.java:431)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.getMapCompletionEvents(ReduceTask.java:2940)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.run(ReduceTask.java:2865)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000247">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000248">task_201312080524_0001_r_000248</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre>Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.net.URL.set(URL.java:707)
+	at java.net.URLStreamHandler.setURL(URLStreamHandler.java:538)
+	at java.net.URLStreamHandler.parseURL(URLStreamHandler.java:305)
+	at java.net.URL.&lt;init&gt;(URL.java:614)
+	at java.net.URL.&lt;init&gt;(URL.java:482)
+	at java.net.URL.&lt;init&gt;(URL.java:431)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.getMapCompletionEvents(ReduceTask.java:2940)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$GetMapEventsThread.run(ReduceTask.java:2865)
+
+Error: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.hadoop.io.compress.DecompressorStream.&lt;init&gt;(DecompressorStream.java:45)
+	at org.apache.hadoop.io.compress.BlockDecompressorStream.&lt;init&gt;(BlockDecompressorStream.java:44)
+	at org.apache.hadoop.io.compress.SnappyCodec.createInputStream(SnappyCodec.java:176)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1707)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1571)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+Error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.commons.codec.binary.BaseNCodec.resizeBuffer(BaseNCodec.java:173)
+	at org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(BaseNCodec.java:190)
+	at org.apache.commons.codec.binary.Base64.decode(Base64.java:424)
+	at org.apache.commons.codec.binary.BaseNCodec.decode(BaseNCodec.java:321)
+	at org.apache.commons.codec.binary.Base64.decodeBase64(Base64.java:680)
+	at org.apache.hadoop.mapreduce.security.SecureShuffleUtils.verifyReply(SecureShuffleUtils.java:89)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1614)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1501)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1412)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1344)
+
+</pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000248">0</a></td></tr>
+<tr><td><a href="http://localhost:9100/taskdetails.jsp?tipid=task_201312080524_0001_r_000249">task_201312080524_0001_r_000249</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>8-Dec-2013 05:41:45<br></td>
+<td>8-Dec-2013 06:00:12 (18mins, 26sec)<br></td>
+<td><pre></pre><br></td>
+<td><a href="http://localhost:9100/taskstats.jsp?tipid=task_201312080524_0001_r_000249">0</a></td></tr>
+</tbody></table></center>
+
+<hr>
+<a href="http://localhost:9100/jobtracker.jsp">Go back to JobTracker</a><br>
+<hr>
+This is <a href="http://hadoop.apache.org/">Apache Hadoop</a> release 1.0.3
+
+
+<autoscroll_cursor hidden=""></autoscroll_cursor><iframe id="rdbIndicator" width="100%" height="270" border="0" src="./Hadoop reduce task list for job_201312080524_0001 on ip-10-17-185-178_files/indicator.html" style="display: none; border: 0; position: fixed; left: 0; top: 0; z-index: 2147483647"></iframe></body></html>

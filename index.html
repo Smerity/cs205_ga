@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png"> -->
+
+    <title>Measuring the impact of Google Analytics</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="//netdna.bootstrapcdn.com/bootswatch/3.0.2/yeti/bootstrap.min.css" rel="stylesheet">-->
+    <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.2/yeti/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      blockquote p.hero {
+        font-size: 28px;
+        text-align: center;
+      }
+      img.padded {
+        margin: 1em;
+      }
+      img.smooth {
+        border-radius: 0px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+        margin: 1em;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <a href="https://github.com/Smerity/cs205_ga">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+    </a>
+
+    <div class="container">
+      <div class="header">
+        <!--
+        <ul class="nav nav-pills pull-right">
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        -->
+      </div>
+
+      <div>
+        <img src="img/iacs.jpg" class="pull-right" width="350px" />
+        <h2>Measuring the impact of Google Analytics</h2>
+        <h3 class="text-muted">Efficiently tackling Common Crawl using MapReduce & Amazon EC2</h3>
+      </div>
+
+      <hr />
+
+      <center>
+        <iframe width="420" height="315" src="//www.youtube.com/embed/pkoIUmP5ma8" frameborder="0" allowfullscreen></iframe>
+      </center>
+
+      <hr />
+
+
+      <div class="content">
+
+        <div>
+          <h2><span style="color:#0266C8">G</span><span style="color:#F90101">o</span><span style="color:#F2B50F">o</span><span style="color:#0266C8">g</span><span style="color:#00933B">l</span><span style="color:#F90101">e</span> Analytics on the Internet</h2>
+          <!--
+          <center>
+            <img src="img/google-analytics.png" class="smooth" />
+          </center>
+          -->
+          <p>
+            Google Analytics (GA) is one of the most pervasive web analytics tools available on the Internet.
+            Just how pervasive is it?
+            <a href="http://trends.builtwith.com/analytics/Google-Analytics">65% of the top 10k sites, 63.9% of the top 100k, and 50.5% of the top million use Google Analytics</a>.
+            In practical terms, this means that you're basically either on a website that is using Google Analytics or <abbr title="Indeed, if you clicked on the BuiltWith link above, that page uses Google Analytics. As GA is included in the JS instead of in the HTML, it'd also not be picked up by our method. Read below for more details.">your next click will likely land you on one that does</abbr>.
+          </p>
+
+          <p>
+            While the percentage of websites using Google Analytics has been calculated for the top N thousand websites, this is not a true measure of how widely the impact is felt.
+            If you land on a web page with Google Analytics, a multitude of details are recorded, including the HTTP referrer, or web page that lead you to the current website.
+            Thus, if you are unlucky enough to land on a web page using Google Analytics every second link click, Google might have enough information to reconstruct your entire path.
+          </p>
+          <p>
+            This line of exploration motivates our questions and the tasks required to answer them.
+            <ul>
+              <li>What percentage of web pages on the Internet use GA for tracking their web traffic?
+              <li>If clicking a link from host A to host B, what is the probability that neither, one, or both pages have GA?
+              <li>If clicking a random link on the Internet, what is the probability that neither, one, or both pages have GA?
+            </ul>
+          </p>
+
+          <h3>The NSA and Google Analytics</h3>
+
+          <p>
+            It has recently come to light that the <a href="http://www.washingtonpost.com/blogs/the-switch/wp/2013/12/10/nsa-uses-google-cookies-to-pinpoint-targets-for-hacking/">NSA used (and may still continue to use) Google Ads and Analytics cookies to track users across the Internet</a>.
+            If you are on a web page that uses Google Analytics and the web page uses HTTP, the Javascript request and response, as well as the cookies that go along with it, are sent in the clear.
+            If the unencrypted request is intercepted by a passive man in the middle (see NSA telecommunication interception facilities such as <a href="http://en.wikipedia.org/wiki/Room_641A">Room 641A</a>), then all of this information is transparently available to the intercepting party.
+            Most importantly, the Google Analytics cookie stores a tracking token that ties the session to a specific user.
+            By intercepting and recording this information, it is alleged that the NSA are able to track the specific path that a given user may take across the Internet with the same level of knowledge as Google itself.
+          </p>
+
+          <center>
+            <a href="https://news.ycombinator.com/item?id=6885448">
+              <img src="img/hn_nsa_ga.png" class="smooth" />
+            </a>
+          </center>
+
+          <p>
+            In the <a href="https://news.ycombinator.com/item?id=6885448">Hacker News comment thread</a> where we discussed this new revelation in regards to our research, our comment was voted to the top of the page and sparked an extensive discussion.
+            Two separate parties have emailed us specifically asking to be informed of the final results of our work.
+          </p>
+
+          <!--<h3>The HTTPS Addendum</h3>-->
+        </div>
+
+        <hr />
+
+        <div style="background-image: url(img/ccLogo_transp.png); background-position: center; background-repeat: no-repeat;">
+          <h2>The Common Crawl dataset</h2>
+          <p>
+            The first and most obvious question is, for a task that would involve such a large portion of web data, where do you acquire this?
+            Crawling hundreds of millions of pages yourself is impractical in many ways and would be a substantial undertaking.
+            Worst, this undertaking would take the majority of your time and yet not actually help answer the question directly.
+          </p>
+          <p>
+            Luckily, the <a href="http://commoncrawl.org/">Common Crawl Foundation</a> is a non-profit foundation dedicated to providing an open repository of web crawl data that can be accessed and analyzed by anyone for free via Amazon S3.
+            In total, the Common Crawl dataset consists of billions of web pages taken over multiple years, from 2008 to 2013.
+            It has been used by a variety of projects, including commercial, academic, and even hobbyist projects.
+          </p>
+          <p>
+            The dataset is available in three different formats:
+            <ul>
+              <li>Raw content retrieved via the HTTP requests (includes many file formats including HTML documents, PDFs, Excel, ...)
+              <li>Extracted textual content from the HTML pages found in the raw content
+              <li>Metadata from each of the HTTP requests. For web pages this includes extracted links, HTTP headers, reported character set, etc.
+            </ul>
+            For our work, we decided to focus on the 2012 snapshot that features 3.83 billion web documents.
+            The 2013 snapshot would have been preferable but was only released at the very end of the year, when the primary portion of our work had already begun.
+          </p>
+          <h3>Common Crawl data is big data</h3>
+          <p>
+            The 3.83 billion web documents of the 2012 Common Crawl dataset are stored on Amazon S3, split across 857,000 ARC files.
+            Even when compressed using gzip compression, the total file size is quite substantial.
+            <ul>
+              <li>Raw content: <b>65 terabytes compressed</b> or approximately <b>210 terabytes decompressed</b>
+              <li>Metadata: <b>40 terabytes compressed</b> or approximately <b>126 terabytes decompressed</b>
+            </ul>
+          </p>
+
+          <center>
+            <img src="img/CCDiagram.png" width="600px" class="padded"/>
+          </center>
+
+          <p class="alert alert-success">
+            As a comparison, 210 terabytes of standard definition video (350MB for a 42 minute show) would allow you to store over 50 years of content!
+          </p>
+        </div>
+
+        <hr />
+
+        <div>
+          <h2>Task Specifics</h2>
+          <p>
+            For our task, we need to produce two quite separate datasets: the Google Analytics count and the link graph.
+            The link graph allows us to see when page A links to page B.
+            The Google Analytics count tells us whether a given page uses Google Analytics.
+          </p>
+          <p>
+            To get an idea of the output size we were looking at, we looked at a comparable project, the <a href="http://webdatacommons.org/hyperlinkgraph/">Web Data Commons Hyperlink Graph</a>.
+            The graph is the largest hyperlink graph that is available to the public outside companies such as Google, Yahoo, and Microsoft.
+            To enable for practical analysis, they offer the graph at multiple levels of granularity.
+            <table class="table">
+              <thead>
+                <tr><th>Graph</th><th>#Nodes</th><th>#Arcs</th><th>Index size</th><th>Link graph size</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Page Graph</td><td >3,563 million</td><td >128,736 million</td><td>45GB compressed</td><td>331GB compressed</td></tr>
+                <tr><td>Subdomain Graph</td><td >101 million</td><td >2,043 million</td><td>832MB compressed</td><td>9.2GB compressed</td></tr>
+                <!--
+                <tr><td>1st Level Subdomain Graph</td><td >95 million</td><td >1,937 million</td><td>45GB compressed</td><td>331GB compressed</td></tr>
+                <tr><td>PLD Graph</td><td >43 million</td><td >623 million</td><td>45GB compressed</td><td>331GB compressed</td></tr>
+                -->
+              </tbody>
+            </table>
+          </p>
+          <p>
+            The page level graph records all links from page A to page B, where page A may look like <b>www.reddit.com/r/funny/</b>.
+            As can be seen, even though it is far smaller than the original dataset, it is still over a terabyte when decompressed.
+          </p>
+          <p>
+            The subdomain level graph records all links from domain A to domain B, where page A would be simplified from <b>www.reddit.com/r/funny/</b> to <b>www.reddit.com</b>.
+            The index (or list of nodes) for the subdomain level graph is just 2% of the index for the page level graph, and the reduction for the link graph is similar.
+          </p>
+          <p>
+            As our work is only an approximation and working with the subdomain level graph is substantially more tractable, we produce and work over the subdomain level graph for our work.
+            Given the proper resources, however, our code is trivially modified to run both the Google Analytics count and the link graph generation a page graph.
+          </p>
+          <p>
+            We would have liked to use this existing resource for our work, but unfortunately the subdomain level graph does not record the number of links between two given domains, only whether a link exists.
+            This is too little data for our task.
+          </p>
+          <h3>Expected Output</h3>
+          <h4>Google Analytics Count</h4>
+          <p>
+            The Google Analytics count will have output where the key is both the subdomain and the "GA state" of a page, and the value is the number of pages with or without Google Analytics.
+          </p>
+          <pre>www.winradio.net.au NoGA	1
+www.winrar.com.cn GA	6
+www.winrar.it NoGA	55
+www.winratzart.com GA	1
+www.winrenner.ch GA	244
+www.winrichfarms.com NoGA	3
+www.winrightsoft.com NoGA	1
+www.winrmb.com GA	2
+www.winrock-stc.org GA	1
+www.winrohto.com NoGA	1</pre>
+          <h4>Link Graph</h4>
+          <p>
+            The link graph will have output where the key is <code>DomainA -> DomainB</code> and the number of times a link is directed from domain A to domain B.
+          </p>
+          <pre>cnet-blu-ray-to-avi-ripper.smartcode.com -> free-avi.smartcode.com	1
+cnet-blu-ray-to-avi-ripper.smartcode.com -> macx-free-idvd-video-converter.smartcode.com	1
+cnet-blu-ray-to-avi-ripper.smartcode.com -> perfectdisk-12-professional.smartcode.com	1
+cnet-blu-ray-to-avi-ripper.smartcode.com -> rip-blu-ray-to-avi.smartcode.com	2
+cnet-blu-ray-to-avi-ripper.smartcode.com -> videosoft-cnet.smartcode.com	1
+cnet-cnec-driver.softutopia.com -> acer-power-fg-lan-driver.softutopia.com	2
+cnet-cnec-driver.softutopia.com -> www.softutopia.com	24
+cnet-digital-music-converter.smartcode.com -> android-music-app-maker.smartcode.com	1
+cnet-digital-music-converter.smartcode.com -> convert-drm-wma.smartcode.com	1
+cnet-digital-music-converter.smartcode.com -> converter.smartcode.com	3</pre>
+          <h4>Final Result</h4>
+          <p>
+            To compute the final result requires merging these two datasets together.
+            For each <code>DomainA -> DomainB</code> in the link graph output, we need to lookup the GA and NoGA values for those domains from the Google Analytics count.
+            From this, we can provide a loose approximation of how extensively Google Analytics is involved in the links from <code>DomainA -> DomainB</code>.
+          </p>
+        </div>
+
+        <hr />
+
+        <div>
+          <h2>Tools</h2>
+          <h3>Language and framework</h3>
+          <p>
+            To tackle this task, we decided to use the Hadoop framework with Java instead of Python as the implementation language.
+            The decision to use Java falls to two main reasons.
+            First, the Common Crawl Foundation provide multiple libraries for use in Java and Hadoop for processing the Common Crawl datasets, such as loaders for the ARC file format.
+            These are well tested and have been used for significant projects by other parties before us.
+            <br />
+            Second, while Python may be less overhead from a coder's point of view, Python is substantially slower than Java for the majority of general computing tasks.
+            This execution overhead is also exacerbated by <a href="http://pythonhosted.org/mrjob/">mrjob</a>, which allows for Python via <a href="http://pythonhosted.org/mrjob/glossary.html#term-hadoop-streaming">Hadoop Streaming</a>.
+            In this dataset, when efficiency is measured in both time and money, the performance losses that arise from Python are too substantial.
+          </p>
+
+          <center>
+            <a href="http://benchmarksgame.alioth.debian.org/">
+              <img src="img/chartvs.png" class="padded"/>
+            </a>
+          </center>
+
+          <h3>Development environment</h3>
+          <p>
+            Setting up a local development environment that contains Hadoop, the required libraries, and test data would be time consuming.
+            To speed up the process, we use a virtual machine created for the Norvig Web Data Science Award, <a href="http://norvigaward.github.io/vm.html">available here</a>.
+            The virtual machine comes set up with Oracle JDK 1.6, Hadoop 0.20.205, Pig 0.10.0, and Eclipse 3.7.2.
+            With only minimal additional work, primarily setting up and installing Ruby and the Amazon EMR CLI, we have a fully operational development environment that allows us to test our code locally.
+          </p>
+          <p>
+            One minor issue is that some of the sample dataset provided with the virtual machine is out of date.
+            This can be fixed by pulling down newer replacement files from Amazon S3.
+          </p>
+        </div>
+
+        <hr />
+
+        <div>
+          <h2>AWS optimizations</h2>
+          <p>
+            For optimizing the cost of running this task, the primary avenue we can look towards is Amazon Web Services itself.
+            In particular, we focus on spot instances, which allow for substantial savings on the computing hardware itself.
+          </p>
+          <h3>Spot instance considerations</h3>
+          <p>
+            To minimize the cost of our experiments, using spot instances on Amazon EC2 was vital.
+            Spot instances allow you to bid on underused EC2 capacity, machines that would sit there unused otherwise.
+            This allows you to utilize machines at just 10-20% of the standard instance price, allowing you to either spend less or to have far greater computing power for the same price.
+          </p>
+          <p>
+            The disadvantage with spot instances is that they can disappear at any time, either due to being outbid by others or as a result of high demand.
+            Luckily, Hadoop is fairly resilient to transient nodes, though it can still result in a worse execution time.
+          </p>
+          <p class="alert alert-danger">
+            <b>Warning:</b> Spot instances can actually exceed the standard cost of the machine. Do <i>not</i> set your maximum bid to more than you're happy to pay!
+          </p>
+          <h3>Selecting the optimal instance type</h3>
+          <p>
+            For our task, we are CPU bound, so want as much computing power as possible.
+            We also don't need machines to exhibit any particular characteristics (such as "has GPU", "greater than N GB of RAM", ...), allowing us flexibility in machine choice.
+            To work out which machine is the most cost effective, we took the average hourly spot instance price and divided it by the total number of EC2 Compute Unit (ECUs) the machine has.
+            A single ECU provides approximately equivalent CPU capacity to that of a 1.0-1.2 GHz 2007 Opteron or 2007 Xeon processor.
+            While this is not an exact measure of the machine's performance, it is representative.
+          </p>
+          <p>
+            From our analysis, we found the two most competitive instances are both from the previous generation of compute optimized instances, the <i>c1.*</i> family.
+            This isn't surprising, though it is surprising that the current generation compute optimized instances are not competitive pricewise at all.
+            This is likely as there are less of the current generation instances on EC2, resulting in higher competition for the current generation compute optimized spot instances.
+            The High-CPU Medium (c1.medium) has 5 ECUs distributed amongst 2 cores while the High-CPU Extra Large (c1.xlarge) has 20 ECUs distributed amongst 8 cores.
+          </p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Machine
+                  <th>ECUs
+                  <th>Hourly spot instance price
+                  <th>Price per single ECU
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>c1.medium
+                  <td>5
+                  <td>$0.018 per hour
+                  <td>$0.0036 per hour
+                </tr>
+                <tr>
+                  <td>c1.xlarge
+                  <td>20
+                  <td>$0.075 per hour
+                  <td>$0.00375 per hour
+                </tr>
+              </tbody>
+            </table>
+          <p>
+            While the optimal instance appears to be the c1.medium, there are two things to consider.
+            First, the standard fluctuations in the spot instance price means that the <i>c1.xlarge</i> can become the most competitive instance.
+            Second, to get the same computing capacity as a <i>c1.xlarge</i>, we need to launch four times as many <i>c1.medium</i> instances.
+            This adds a large amount of overhead, both in terms of spinning up and configuring the EMR cluster and also for the master to actually manage the cluster during the task.
+          </p>
+          <p>
+            Due to the lower accounting overhead and near comparable price, we decided on using the <i>c1.xlarge</i> instances.
+          </p>
+          <h3>Spot instance availability</h3>
+          <p>
+            The price of the spot instances fluctuates similar to a stock market.
+            If demand is high, expect to pay more for the resource.
+            If demand is low, you might snag yourself a deal.
+            As the price is related to demand, other jobs run on Amazon EC2 can impact how much you need to pay at a given time.
+            Below, we can see the fluctuations in price for the <i>c1.xlarge</i> instance.
+            Of particular interest, between 9pm and midnight many evenings, it appears someone runs a massive job that uses up almost all the spare capacity.
+            Numerous times we have had to postpone our jobs or more to different Amazon regions in order to run a job at a reasonable cost.
+            <center>
+              <img src="img/spot_price_spikes.png" class="smooth"/>
+            </center>
+          </p>
+          <h3>Elastic MapReduce (EMR) overhead</h3>
+          <p>
+            One unfortunate consequence of using Amazon's Elastic MapReduce (EMR) is that there is a cost overhead applied to each instance that is part of the EMR cluster.
+            This cost overhead is commonly more expensive than the machine itself when using spot instances.
+            If hundreds (or even dozens!) of these styles of jobs are to be run, it would make sense to construct your own Hadoop cluster instead of relying on Amazon EMR to do it for you.
+          </p>
+          <p>
+            This might appear extreme, but it would literally result in a 50% or more reduction in the cost of the task.
+          </p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Machine
+                  <th>On-demand instance price
+                  <th>Hourly spot instance price
+                  <th>Hourly EMR management price
+                  <th>EMR as percentage of spot instance price
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>c1.medium
+                  <td>$0.145 per hour
+                  <td>$0.018 per hour
+                  <td>$0.030 per hour
+                  <td>166%
+                </tr>
+                <tr>
+                  <td>c1.xlarge
+                  <td>$0.58 per hour
+                  <td>$0.075 per hour
+                  <td>$0.12 per hour
+                  <td>160%
+                </tr>
+              </tbody>
+            </table>
+        </div>
+
+        <hr />
+
+
+        <div>
+          <h2>Hadoop optimizations</h2>
+          <p>
+            The majority of the expense in this task is in executing the mapper and reducer code.
+            As such, optimizing this part of the code is essential.
+            To evaluate how the proposed optimizations impacted the efficiency of our task, we ran multiple experiments on a small subset of the Common Crawl dataset.
+            This subset is 1/177th of the Common Crawl dataset, or approximately 1TB of data.
+            The cluster used in this experiment consisted of 12 <i>c1.xlarge</i> spot instances as workers and a single <i>c1.medium</i> as the Hadoop master node.
+          </p>
+          <h3>Combiner (in-mapper reducer)</h3>
+          <p>
+            A combiner is similar to a reducer except run on the mapper before the data is sent across the network, hence why it is also called an "in-mapper reducer".
+            By running a reduce task before sending the data across the network, the output size of the map step can be reduced substantially.
+            This minimizes the network traffic between machines and also means the reduce step has to do less work.
+            As there are commonly more mappers than reducers, this can also mean more computing power can be used, especially for the early stage of the reduce task.
+          </p>
+          <h3>Compression</h3>
+          <p>
+            At the end of both the Map and Reduce stage, we can use compression to reduce the size of the given stage's output, reducing the network and storage usage.
+            This does come at a trade-off however, as compressing and decompressing the data leads to overhead for the task.
+          </p>
+          <p>
+            In our experiments, we use the Google Snappy algorithm at the mapper stage and the slower but more efficient gzip algorithm for the final output.
+            Google Snappy does not aim for maximum compression, but instead aims for very high speeds and reasonable compression.
+            This minimizes the speed penalty for compressing the large amount of data during the mapper process but gives us the benefit of lower network usage.
+          </p>
+          <h3>Re-using JVMs</h3>
+          <p>
+            It is well known that spinning up a new Java virtual machine (JVM) is time intensive.
+            By default in Hadoop, a new map task is spun up after processing only 20 inputs.
+            As there are 857,000 input files for the full Common Crawl dataset, that means there are over 42,000 JVM restarts.
+          </p>
+          <p>
+            More important than this, the JVM restarts result in lost optimizations for the code.
+            This is as the JVM continually analyzes the program's performance for "hot spots", or frequently executed code snippets.
+            These code snippets are then further optimized through just-in-time (JIT) compilation, leading to better performance.
+            Each time a JVM is restarted, these "hot spot" optimizations are lost.
+          </p>
+          <h3>Increasing total mapper jobs</h3>
+          <p>
+            By default, Amazon EMR optimizes the number of mappers to be equal to the number of CPUs the given machine has.
+            While this would be the correct choice for many tasks, it leads to suboptimal performance in our situation.
+          </p>
+          <p>
+            Our task is not IO bound, but retrieving the next data segment from Amazon S3 takes both time and bandwidth.
+            This can result in too little work for the CPU when finishing a map process until the next one starts.
+            By over-utilizing the CPU by adding additional mapper tasks, the CPU will always have a new segment of data to work on, as the input file will already have been buffered.
+          </p>
+          <p class="alert alert-danger">
+            Over-utilizing the CPU traditionally results in worse performance in many tasks due to cache thrashing.
+            This is quite a specific situation.
+          </p>
+
+        </div>
+
+        </div>
+
+        <hr />
+
+        <div>
+          <h2>Ganglia</h2>
+          <p>
+            For observing the cluster while running our MapReduce jobs, we needed something more detailed than the limited information returned by Hadoop's internal job tracker or EC2's cluster metrics.
+            The Ganglia open source project is a scalable, distributed system designed to monitor clusters and grids while minimizing the impact on their performance.
+            With Ganglia, we could see the CPU, memory, and network utilization of the cluster at a glance, and could easily identify when a MapReduce job may be experiencing issues.
+          <center>
+            <a href="img/ganglia.png">
+              <img src="img/ganglia.png" class="smooth" width="700px" />
+            </a>
+          </center>
+          </p>
+        </div>
+
+        <hr />
+
+        <div>
+          <h2>Challenges</h2>
+          <h3>Overtaxing the Hadoop Master</h3>
+          <p>
+            When running our experiments, we sometimes found the Hadoop master could not keep up.
+            The Hadoop master is responsible for co-ordinating the rest of the cluster, and most importantly telling them what portion of the task to tackle next.
+            If the Hadoop master is overloaded, the performance of the rest of the cluster suffers.
+            In the graph below, we were nearing full utilization of a cluster of over 1600 CPUs when the master suddenly became overwhelmed.
+            <center>
+              <a href="img/seg100_a_cpu.png">
+                <img src="img/seg100_a_cpu.png" class="smooth" width="700px" />
+              </a>
+            </center>
+          </p>
+          <p>
+            To combat this issue, we increased the Hadoop master to a far more powerful instance type.
+            For most of the Hadoop job, the 16 core machine was underutilized.
+            Occasionally, however, there would be a massive spike in activity, utilizing all 16 cores at full capacity.
+            It is these spikes which we suspect caused the issue seen in the graph above.
+          </p>
+          <p>
+            <center class="clearfix">
+              <a href="img/seg100_b_master_low.png">
+                <img src="img/seg100_b_master_low.png" class="pull-left smooth" width="500px" />
+              </a>
+              <a href="img/seg100_b_master_high.png">
+                <img src="img/seg100_b_master_high.png" class="pull-right smooth" width="500px" />
+              </a>
+            </center>
+            In addition to upgrading to a large instance, we also increase the number of job tracker handlers the Hadoop master node runs by adding <code>--mapred-key-value mapred.job.tracker.handler.count=32</code> to the Hadoop configuration script.
+            Each job tracker handler is responsible for a subset of the machines the cluster.
+            Adding more of them decreases the latency the average machine will experience and helps with load balancing when the Hadoop master has many CPUs available.
+          </p>
+          <p>
+            While the MapReduce paradigm and Hadoop framework are engineered to be resilient to issues, the master node still represents a single point of failure that can cause grief.
+          </p>
+          <h3>Temperamental Amazon EMR</h3>
+          <p>
+            Spinning up and shutting down clusters on EMR leave much to be desired.
+          </p>
+          <p>
+            The largest and most problematic concern is that the Hadoop master is spun up after all the Hadoop core nodes.
+            If using a large cluster of hundreds of nodes, you are immediately talking about dollars per hour, if not more.
+            When all the core nodes are spun up, and EMR tries to spin up the Hadoop master node, you are already paying for money.
+            Occasionally, EMR might have trouble spinning up the Hadoop master node, either due to a system issue, limited capacity in the EC2 region, or so on.
+            In this situation, EMR fails, automatically shuts down all the Hadoop core nodes, yet still charges you for an hour of computing time for each instance.
+          </p>
+          <h3>Handling Map Task Failures</h3>
+          <p>
+            Map tasks can fail for one of two reasons.
+            The first reason is that the machine handling the map task experienced an issue, such as being pulled offline or having defective memory.
+            The second reason is that the data is corrupt or the data causes an issue with the code that processes it.
+            If you hit an issue with a single map task out of a job that involves 857,000, you don't want to stop the job and terminate the entire cluster.
+          </p>
+          <p>
+            By setting the <code>mapred.max.map.failures.percent</code>, we allow Hadoop to register issues with map tasks but to continue without stopping the MapReduce job itself.
+            In some tasks, such as when one is dealing with financial data, this would not be an option, as any loss of consistency in the data is a major concern.
+            In our task, however, the loss of a few thousand web pages when processing billions of documents is not an extreme loss, especially as our final result is already an approximation.
+          </p>
+          <h3>Cost of Elastic MapReduce</h3>
+          <p>
+            As mentioned previously, the cost of Elastic MapReduce is extreme when you are using spot instances.
+            For providing a simplified wrapper around an open source tool, Amazon charge 160% more than the cost of the computing resource it is running on.
+            If this was to be done repeatedly, or if someone had sufficient incentive, there would be significant financial incentive to provide an open source EMR equivalent.
+            <a href="https://jujucharms.com/">Ubuntu Juju Charms</a>, a "next generation service orchestration framework", was used to <a href="http://markmims.com/cloud/2012/06/04/juju-at-scale.html">scale a 2000 node Hadoop cluster on EC2</a> previously and would be a promising avenue of exploration.
+          </p>
+        </div>
+
+        <hr />
+
+        <div>
+          <h2>Experimental results</h2>
+            <p>
+              The optimizations resulted in a 36.67% decrease in the processing time for the experimental dataset.
+              The biggest wins in performance come from adding more mappers than there are CPUs and by re-using the JVMs.
+              Combiners also improve the speed.
+              Compression results in lower performance but less data written overall.
+              Only 2.54GB is written to S3 compared to the equivalent 19GB uncompressed file.
+            </p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Optimizations
+                  <th>Time
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Baseline*</td>
+                  <td>37 minutes 35 seconds
+                </tr>
+                <tr>
+                  <td>Combiner</td>
+                  <td>33 minutes 21 seconds
+                </tr>
+                <tr>
+                  <td>Combiner + Compression</td>
+                  <td>34 minutes 44 seconds
+                </tr>
+                <tr>
+                  <td>Combiner + Compression + Re-use</td>
+                  <td>30 minutes 05 seconds
+                </tr>
+                <tr>
+                  <td>Combiner + Compression + Re-use + Extra Mappers</td>
+                  <td>23 minutes 48 seconds
+                </tr>
+             </tbody>
+            </table>
+              <i>*The baseline experiment failed to fully complete due to memory issues on a single reduce node. This shows the importance of combiners in our task.</i>
+          </p>
+
+          <h2>Google Analytics Results</h2>
+          <p>
+            Our largest experiment was to tackle 15% of the Common Crawl dataset, equal to over half a billion web pages and clocking in at 31TB in total.
+            We attempted the full corpus two times, but both times new issues arose that needed to be resolved.
+            At this stage, we believe that computing multiple MapReduce jobs over complimentary portions of the dataset and then reducing those in a later reduce step would likely be far more manageable.
+          </p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Pages with GA
+                  <th>Pages without GA
+                  <th>Total pages processed
+                  <th>Percentage of pages with GA
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>212,611,840
+                  <td>323,062,108
+                  <td>535,673,948
+                  <td>39.69%
+                </tr>
+              </tbody>
+            </table>
+          <p>
+            The result that we have falls in line with analysis by others (<a href="http://trends.builtwith.com/analytics/Google-Analytics">65% of the top 10k sites, 63.9% of the top 100k, and 50.5% of the top million use Google Analytics</a>).
+            We can now show that, of 535.67 million web pages, approximately 39.69% of them use Google Analytics for tracking traffic.
+            This is the largest result that we know about for understanding how extensively Google Analytics is used beyond the top million domains.
+            It shows that while the usage of Google Analytics does decline compared to the top 10k to million domains, that it is still incredibly common.
+          </p>
+          <h3>Estimation of how many links involve Google Analytics</h3>
+          <p>
+            In our final step, we merged the Google Analytics count and the domain level link graph to get an estimate of the proportion of links that either start with, end with, or have both pages using Google Analytics.
+            Any links which we do not have information about both of the endpoints (i.e. isn't in our Google Analytics count) are discarded.
+            The proportion of links that have endpoint/s in Google Analytics is estimated using the numbers retrieved from the Google Analytics count.
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Links with endpoint/s in GA
+                  <th>Total links
+                  <th>Percentage of links with endpoint/s in GA
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>4,413,170,713
+                  <td>7,879,309,758
+                  <td>56.01%
+                </tr>
+              </tbody>
+            </table>
+            As far as we know, this is the first time anyone has attempted to address this question on such a scale.
+          </p>
+        </div>
+
+        <hr />
+
+        <div>
+          <h2>Conclusions</h2>
+          <p>
+          While the Common Crawl dataset is freely available, the size and complexity of fully processing it has been a persistent issue.
+          Even the smallest performance improvements can result in saving dozens of hours or hundreds of dollars when using Amazon AWS.
+          The optimization methods we explore here can substantially reduce the cost of running experiments on the CC dataset, opening up the data to wider academic, commercial and hobbyist use.
+          </p>
+          <p>
+            We have also shown how extensively Google Analytics is used across the Internet by processing over half a billion web pages.
+            With the ever decreasing cost of on-demand computing, we hope this research and future work will allow this level of analysis to be achievable by anyone with sufficient interest.
+            In our future work, and especially in light of the recent interest due to the NSA revelations, we plan to process the full Common Crawl dataset and provide both our results and the method we obtained them publicly for anyone who might be interested.
+          </p>
+        </div>
+
+        <div class="footer">
+          <p>C. Hornbaker, S. Merity 2013</p>
+        </div>
+
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
