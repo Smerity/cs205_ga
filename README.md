@@ -60,6 +60,10 @@ Thus, if we wanted to run `GALinkGraph` over 15 segments with a combiner step an
 
 ## Running jobs
 
+Before you can run your Hadoop program, you need to upload the *JAR* file to Amazon S3.
+This can be done by either using the online AWS S3 interface or by using an AWS CLI tool.
+This is required as EMR loads the Java program from the S3 bucket.
+
 To create EMR clusters and run MapReduce jobs, you have two options. You can use the GUI in the Amazon EMR console, and repeatedly copy and paste the same values in, or you can use the Amazon EMR Command Line Interface (CLI).
 
 The CLI allows you to spin up and run jobs from your own terminal.
