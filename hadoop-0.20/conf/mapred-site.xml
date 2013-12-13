@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+  <property>
+    <name>mapred.job.tracker</name>
+    <value>jobtracker.alley.sara.nl:8021</value>
+  </property>
+
+  <property>
+    <name>mapred.job.tracker.http.address</name>
+    <value>jobtracker.alley.sara.nl:50030</value>
+  </property>
+
+  <property>
+    <name>mapred.tasktracker.dns.interface</name>
+    <value>bond0</value>
+  </property>
+
+  <property>
+    <name>mapred.system.dir</name>
+    <value>/hadoop/mapred/system/</value>
+  </property>
+
+  <!-- the first entry works only on the JobTracker, the others only on the TaskTrackers //-->
+  <property>
+    <name>mapred.local.dir</name>
+    <value>/hadoop/mapred.local.dir/,/disk1/mapred.local.dir/,/disk2/mapred.local.dir/,/disk3/mapred.local.dir/,/disk4/mapred.local.dir/</value>
+  </property>
+
+  <property>
+    <name>mapred.tasktracker.map.tasks.maximum</name>
+    <value>8</value>
+  </property>
+
+  <property>
+    <name>mapred.tasktracker.reduce.tasks.maximum</name>
+    <value>8</value>
+  </property>
+
+  <property>
+    <name>mapred.child.java.opts</name>
+    <value>-Xmx1024m</value>
+  </property>
+
+  <property>
+    <name>mapred.reduce.parallel.copies</name>
+    <value>20</value>
+  </property>
+
+  <property>
+    <name>mapred.job.tracker.persist.jobstatus.active</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>mapred.job.tracker.persist.jobstatus.hours</name>
+    <value>1</value>
+  </property>
+
+  <!-- Security config //-->
+  <property>
+    <name>mapreduce.jobtracker.kerberos.principal</name>
+    <value>mapred/p-jobtracker.alley.sara.nl@ALLEY.SARA.NL</value>
+  </property>
+
+  <property>
+    <name>mapreduce.jobtracker.kerberos.https.principal</name>
+    <value>host/p-jobtracker.alley.sara.nl/ALLEY.SARA.NL</value>
+  </property>
+
+  <property>
+    <name>mapreduce.jobtracker.keytab.file</name>
+    <value>/etc/hadoop/conf/mapred.keytab</value>
+  </property>
+
+  <!-- TaskTracker security configs //-->
+  <!-- property> *** Will insert this through the postscript, to prevent the jobtracker from being confused on the TT's principal
+    <name>mapreduce.tasktracker.kerberos.principal</name>
+    <value>mapred/p-login.alley.sara.nl@ALLEY.SARA.NL</value>
+  </property //-->
+
+  <property>
+    <name>mapreduce.tasktracker.kerberos.https.principal</name>
+    <value>host/p-login.alley.sara.nl@ALLEY.SARA.NL</value>
+  </property>
+
+  <property>
+    <name>mapreduce.tasktracker.keytab.file</name>
+    <value>/etc/hadoop/conf/mapred.keytab</value>
+  </property>
+
+  <!-- TaskController settings //-->
+  <property>
+    <name>mapred.task.tracker.task-controller</name>
+    <value>org.apache.hadoop.mapred.LinuxTaskController</value>
+  </property>
+
+  <property>
+    <name>mapreduce.tasktracker.group</name>
+    <value>mapred</value>
+  </property>
+
+  <!-- Scheduler stuff //-->
+  <!-- property>
+    <name>mapred.jobtracker.taskScheduler</name>
+    <value>org.apache.hadoop.mapred.CapacityTaskScheduler</value>
+  </property //-->
+
+  <!-- Hue plugin //-->
+  <property>
+    <name>jobtracker.thrift.address</name>
+    <value>0.0.0.0:9290</value>
+  </property>
+
+  <property>
+    <name>mapred.jobtracker.plugins</name>
+    <value>org.apache.hadoop.thriftfs.ThriftJobTrackerPlugin</value>
+    <description>Comma-separated list of jobtracker plug-ins to be activated.</description>
+  </property>
+
+</configuration>

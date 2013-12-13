@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+  <property>
+    <name>fs.default.name</name>
+    <value>hdfs://p-head03.alley.sara.nl:8020/</value>
+  </property>
+
+  <property>
+    <name>hadoop.security.authentication</name>
+    <value>kerberos</value>
+  </property>
+
+  <property>
+    <name>hadoop.security.authorization</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>hadoop.security.auth_to_local</name>
+    <value>
+    RULE:[1:$1](.*)
+    RULE:[2:$1](.*)
+    DEFAULT
+    </value>
+  </property>
+
+  <!-- auth for all HTTP web-consoles -->
+
+  <property>
+    <name>hadoop.http.filter.initializers</name>
+    <value>org.apache.hadoop.security.AuthenticationFilterInitializer</value>
+  </property>
+
+  <property>
+    <name>hadoop.http.authentication.type</name>
+    <value>kerberos</value>
+  </property>
+
+  <property>
+    <name>hadoop.http.authentication.token.validity</name>
+    <value>36000</value>
+  </property>
+
+  <property>
+    <name>hadoop.http.authentication.signature.secret.file</name>
+    <value>/etc/hadoop/conf/hadoop-http-auth-signature-secret</value>
+  </property>
+
+  <property>
+    <name>hadoop.http.authentication.cookie.domain</name>
+    <value>alley.sara.nl</value>
+  </property>
+
+  <property>
+    <name>hadoop.http.authentication.simple.anonymous.allowed</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>hadoop.http.authentication.kerberos.keytab</name>
+    <value>/etc/hadoop/conf/http.keytab</value>
+  </property>
+
+  <!-- Hue security //-->
+  <property>
+    <name>hue.kerberos.principal.shortname</name>
+    <value>hue</value>
+  </property>
+
+  <property>
+    <name>hadoop.proxyuser.hue.groups</name>
+    <value>*</value> <!-- A group which all users of Hue belong to, or the wildcard value "*" -->
+  </property>
+
+  <property>
+    <name>hadoop.proxyuser.hue.hosts</name>
+    <value>p-hue.alley.sara.nl</value>
+  </property>
+
+  <property>
+    <name>hadoop.http.authentication.kerberos.principal</name>
+    <value>HTTP/p-login.alley.sara.nl@ALLEY.SARA.NL</value>
+  </property>
+
+</configuration>
