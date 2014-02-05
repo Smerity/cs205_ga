@@ -1,4 +1,4 @@
-Measuring the impact of Google Analytics
+[Measuring the impact of Google Analytics](http://smerity.com/cs205_ga/)
 ==============================
 
 This Hadoop programs provides two tools: `org.cs205.ccga.GACount` and `org.cs205.ccga.GALinkGraph`.
